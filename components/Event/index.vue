@@ -33,7 +33,10 @@ export default {
     };
   },
   mounted() {
-    this.$store.dispatch("fetchSingleEvent", this.$route.params.id);
+    console.log(
+      
+    )
+    this.$store.dispatch("fetchSingleEvent", this.$route.query.id);
   },
   computed: {
     ...mapGetters(["singleEvent"])

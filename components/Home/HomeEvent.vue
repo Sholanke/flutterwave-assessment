@@ -1,5 +1,8 @@
 <template>
-  <router-link :to="`/event/${eventData.id}`" class="home-event">
+  <router-link
+    :to="{ path: 'event', query: { id: eventData.id } }"
+    class="home-event"
+  >
     <div class="home-event__image-holder">
       <p class="event__tag _flex a_center" v-if="eventData.is_free">Free</p>
       <img
