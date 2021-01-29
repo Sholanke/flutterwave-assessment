@@ -1,0 +1,23 @@
+@mixin modalize {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.267);
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  @content;
+}
+
+@mixin mediaMaxWidth($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include mediaMaxWidth(600px) {
+    @content;
+  }
+}
