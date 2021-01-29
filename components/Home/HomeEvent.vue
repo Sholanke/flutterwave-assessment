@@ -67,6 +67,7 @@ export default {
   width: 100%;
   animation-name: fadeUp;
   animation-duration: 0.5s;
+  background: #fff;
 
   &:hover {
     .home-event__image-holder {
@@ -81,7 +82,7 @@ export default {
   .home-event__image-holder {
     height: 200px;
     background: #fff;
-    background-image: url("https://d35z3p2poghz10.cloudfront.net/apps/thirdparty/rave-payments/rave%20header.png");
+    background-image: url("/assets/svg/banner.svg");
     background-position: center;
     background-size: cover;
     position: relative;

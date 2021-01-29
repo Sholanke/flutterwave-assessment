@@ -1,4 +1,4 @@
-# flutterwave-nuxt
+# Ticket Master - Flutterwave
 
 ## Build Setup
 

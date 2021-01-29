@@ -103,7 +103,7 @@ export default {
     }
   }
   &__image_holder {
-    background-image: url("https://miro.medium.com/max/3150/1*Z1GByNW4KCR8HNCUjbgzdA.png");
+    background-image: url("/assets/svg/banner.svg");
     height: 100%;
     background-size: cover;
     background-position: center;
