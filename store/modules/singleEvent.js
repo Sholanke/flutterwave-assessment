@@ -107,19 +107,18 @@ const mutations = {
     };
     // --- call buy ticket api ---
     buyTicket({
-      body,
-      resolve() {
-        // --- register user for event after successful payment ---
-        registerForEvent({
-          body: userData,
-          eventID: body.event.data.id
-        }).then(() => {
-          alert(
-            `You have registered for ${body.event.data.name} at ${body.event.data.venue}`
-          );
-          callback();
-        });
-      }
+      body
+    }).then(() => {
+      // --- register user for event after successful payment ---
+      registerForEvent({
+        body: userData,
+        eventID: body.event.data.id
+      }).then(data => {
+        alert(
+          `You have registered for ${body.event.data.name} at ${body.event.data.venue}`
+        );
+        callback(data);
+      });
     });
   }
 };
