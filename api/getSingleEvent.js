@@ -2,5 +2,5 @@ import API from "./API";
 
 export default function getSingleEvent(id) {
   const url = `events/${id}`;
-  return API.get(url).then(resolve, reject);
+  return API.get(url);
 }
