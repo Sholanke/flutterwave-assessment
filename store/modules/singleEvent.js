@@ -53,12 +53,13 @@ const actions = {
     // ---- update number of tickets for ticket with id options.ticketID -----
     commit("UPDATE_CART_TICKET", options);
   },
-  buyTicket({ commit, dispatch }, callback) {
+  buyTicket({ commit, dispatch }) {
     // --- buy ticket and register user, when done
-    callback = callback || console.log;
-    commit("BUY_TICKET", () => {
-      callback();
-      dispatch("resetCart");
+    return new Promise((resolve = () => {}) => {
+      commit("BUY_TICKET", data => {
+        resolve(data);
+        dispatch("resetCart");
+      });
     });
   }
 };
