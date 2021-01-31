@@ -13,7 +13,7 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
+<style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -25,6 +25,11 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+</style>
+
+
+<style lang="scss" scoped>
+
 
 *,
 *::before,
