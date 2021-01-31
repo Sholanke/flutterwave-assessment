@@ -13,14 +13,14 @@
       </div>
 
       <!-- event price range -->
-      <p class="event-details__price_range">
+      <p class="event-details__price-range">
         ₦{{ MIN_TICKET_PRICE }}
         {{ !minEqualsMax ? `– ₦${MAX_TICKET_PRICE}` : "" }}
       </p>
 
       <!-- buy ticket button -->
 
-      <BaseButton class="event-details__buy_button" @click="makePayment">
+      <BaseButton class="event-details__buy-button" @click="makePayment">
         {{ buyTicketButtonText }}
       </BaseButton>
     </div>
@@ -88,13 +88,13 @@ export default {
           padding-bottom: 35px;
         }
       }
-      &__price_range {
+      &__price-range {
         padding-bottom: 25px;
         font-size: 24px;
         font-weight: 500;
         line-height: 1;
       }
-      &__buy_button {
+      &__buy-button {
         width: 100%;
         padding: 18px 20px;
         font-size: 16px;

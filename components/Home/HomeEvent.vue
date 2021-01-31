@@ -1,6 +1,7 @@
 <template>
   <router-link
     :to="{ path: 'event', query: { id: eventData.id } }"
+    :data-sold-out="eventData.is_sold_out"
     class="home-event"
   >
     <div class="home-event__image-holder">
@@ -68,6 +69,7 @@ export default {
   animation-name: fadeUp;
   animation-duration: 0.5s;
   background: #fff;
+  position: relative;
 
   &:hover {
     .home-event__image-holder {
@@ -78,7 +80,6 @@ export default {
       }
     }
   }
-
   .home-event__image-holder {
     height: 200px;
     background: #fff;

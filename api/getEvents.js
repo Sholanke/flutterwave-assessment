@@ -1,9 +1,6 @@
-import axios from "axios";
-import { BASE_URL } from "../utils/constants";
+import API from "./API";
 
 export default function getEvents(page = 1) {
-  return new Promise((resolve, reject) => {
-    const url = `${BASE_URL}/events?page=${page}`;
-    axios.get(url).then(resolve, reject);
-  });
+  const url = `events?page=${page}`;
+  return API.get(url);
 }
