@@ -111,10 +111,11 @@ const mutations = {
       body
     }).then(() => {
       // --- register user for event after successful payment ---
-      registerForEvent({
+      const registerArgs = {
         body: userData,
         eventID: body.event.data.id
-      }).then(data => {
+      };
+      registerForEvent(registerArgs).then(data => {
         alert(
           `You have registered for ${body.event.data.name} at ${body.event.data.venue}`
         );
