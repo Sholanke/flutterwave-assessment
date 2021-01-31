@@ -1,4 +1,9 @@
-import { DECREMENTER, INCREMENTER, sumUp, ticketTotalPrice } from "../utils/Order";
+import {
+  DECREMENTER,
+  INCREMENTER,
+  sumUp,
+  ticketTotalPrice
+} from "../utils/Order";
 
 // incrementer tests
 test("Should increment number ", () => {
